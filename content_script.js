@@ -12,7 +12,9 @@ const monetizationEnabled = () => {
   let paidInXrp = 0;
   let paidinEur = 0;
 
-  const RIPPLE2EUR = 0.459915;
+  // The Ripple (XRP) value is currently very unstable. To best reflect actual value
+  // change this to the most recent value: https://www.coingecko.com/en/coins/xrp/eur
+  const RIPPLE2EUR = 0.262939;
 
   const RAW_PRICE = RAW_PRICE_EL.getAttribute('content');
   const RAW_RATE = RAW_RATE_EL.getAttribute('content');
